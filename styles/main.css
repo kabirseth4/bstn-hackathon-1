@@ -71,6 +71,12 @@ main {
   height: 1px;
   background-color: #000;
 }
+.character--correct {
+  color: black;
+}
+.character--incorrect {
+  color: red;
+}
 
 main {
   display: flex;

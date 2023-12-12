@@ -26,7 +26,6 @@
   }
 }
 
-
 .character {
   position: relative;
   color: transparent;
@@ -41,14 +40,22 @@
     height: 1px;
     background-color: #000;
   }
+
+  &--correct {
+    color: black;
+  }
+
+  &--incorrect {
+    color: red;
+  }
 }
 
 main {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 main {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
