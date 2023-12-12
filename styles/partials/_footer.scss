@@ -1,14 +1,24 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    &__hearts {
-        padding: 1rem;
-    }
-    &__heart,
-    &__broken-heart {
-        height: 2rem;
-        width: 2rem;
-    }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  &__label {
+    font-size: 3rem;
+  }
+
+  &__input {
+    font-size: 3rem;
+    width: 4rem;
+    padding: 0.5rem;
+  }
+  &__hearts {
+    padding: 1rem;
+  }
+  &__heart,
+  &__broken-heart {
+    height: 2rem;
+    width: 2rem;
+  }
 }

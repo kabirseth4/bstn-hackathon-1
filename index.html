@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <h1 class="header__title">Office Quotes Hangman</h1>
-      <h2 class="header__end-game">You are out of lives! Refresh for a new quote!</h2>
+      <h2 class="header__end-game"></h2>
     </header>
     <main>
       <section class="quote">
@@ -19,9 +19,7 @@
           <img class="quote__image" src="" alt="Office character" />
         </article>
         <article class="quote__right-side">
-          <h2 class="quote__text">
-          <h2 class="quote__text">
-          </h2>
+          <h2 class="quote__text"></h2>
           <h4 class="quote__author"></h4>
         </article>
       </section>
@@ -29,11 +27,9 @@
     <footer>
       <section class="footer">
         <article class="footer__text">
-          <input
-          type="text"
-          class="footer__input"
-          placeholder="Type your letter..."
-        />
+          <label for="input" class="footer__label">Input letter:</label>
+          <input type="text" id="input" class="footer__input" />
+        </article>
         <article class="footer__hearts"></article>
       </section>
     </footer>

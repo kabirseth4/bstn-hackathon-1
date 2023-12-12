@@ -25,7 +25,13 @@ main {
 }
 .header__end-game {
   margin: 0;
+  font-size: 2rem;
+}
+.header__end-game--loss {
   color: red;
+}
+.header__end-game--win {
+  color: limegreen;
 }
 
 .footer {
@@ -33,6 +39,14 @@ main {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+}
+.footer__label {
+  font-size: 3rem;
+}
+.footer__input {
+  font-size: 3rem;
+  width: 4rem;
+  padding: 0.5rem;
 }
 .footer__hearts {
   padding: 1rem;

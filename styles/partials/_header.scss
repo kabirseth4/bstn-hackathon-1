@@ -1,12 +1,20 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-&__title {
-        font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 4rem;
+  }
+  &__end-game {
+    margin: 0;
+    font-size: 2rem;
+
+    &--loss {
+      color: red;
     }
-    &__end-game {
-        margin: 0;
-        color: red;
+
+    &--win {
+      color: limegreen;
     }
+  }
 }

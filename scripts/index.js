@@ -10,6 +10,19 @@ const getRandomQuote = async () => {
   return response.data;
 };
 
+const checkWin = () => {
+  const characters = document.querySelectorAll(".character");
+  let win = true;
+
+  characters.forEach((char) => {
+    if (!char.classList.contains("character--correct")) {
+      win = false;
+    }
+  });
+
+  return win;
+};
+
 const addHearts = () => {
   const container = document.querySelector(".footer__hearts");
   container.innerHTML = "";
@@ -32,14 +45,24 @@ const addHearts = () => {
 addHearts();
 
 const endGame = () => {
+  const message = document.querySelector(".header__end-game");
   inputEl.disabled = true;
 
-  const characters = document.querySelectorAll(".character");
-  characters.forEach((char) => {
-    if (!char.classList.contains("character--correct")) {
-      char.classList.add("character--incorrect");
-    }
-  });
+  if (livesLost === totalLives) {
+    const characters = document.querySelectorAll(".character");
+    characters.forEach((char) => {
+      if (!char.classList.contains("character--correct")) {
+        char.classList.add("character--incorrect");
+      }
+    });
+    message.innerText = "You are out of lives! Refresh for a new quote!";
+    message.classList.add("header__end-game--loss");
+    return;
+  }
+
+  message.innerText = "You won! Refresh for a new quote!";
+  message.classList.add("header__end-game--win");
+  return;
 };
 
 const createQuote = (quote) => {
@@ -94,5 +117,8 @@ inputEl.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     checkGuess(e.target.value);
     inputEl.value = "";
+    if (checkWin()) {
+      endGame();
+    }
   }
 });
