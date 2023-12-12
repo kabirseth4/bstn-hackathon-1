@@ -1,6 +1,5 @@
 .quote {
   display: flex;
-  margin-bottom: 2rem;
   width: 100%;
   padding: 1rem;
 
@@ -19,5 +18,15 @@
 
   &__author {
     float: right;
+    font-size: 2rem;
   }
+  &__text {
+    font-size: 3rem;
+    margin: 0;
+  }
+}
+
+main {
+    display: flex;
+    align-items: center;
 }

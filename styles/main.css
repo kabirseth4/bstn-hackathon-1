@@ -20,6 +20,9 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.header__title {
+  font-size: 4rem;
+}
 
 .footer {
   display: flex;
@@ -32,7 +35,6 @@ main {
 
 .quote {
   display: flex;
-  margin-bottom: 2rem;
   width: 100%;
   padding: 1rem;
 }
@@ -48,4 +50,14 @@ main {
 }
 .quote__author {
   float: right;
+  font-size: 2rem;
+}
+.quote__text {
+  font-size: 3rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
