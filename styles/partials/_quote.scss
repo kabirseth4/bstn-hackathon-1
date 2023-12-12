@@ -1,0 +1,11 @@
+.quote {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    &__left-side {
+        width: 50%;
+    }
+    &__right-side {
+        width: 50%;
+    }
+}
