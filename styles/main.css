@@ -23,10 +23,19 @@ main {
 .header__title {
   font-size: 4rem;
 }
+.header__end-game {
+  margin: 0;
+  color: red;
+}
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__hearts {
+  padding: 1rem;
 }
 .footer__heart, .footer__broken-heart {
   height: 2rem;
@@ -86,4 +95,8 @@ main {
 main {
   display: flex;
   align-items: center;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/crinkled-paper-texture_23-2147786533.jpg?w=2000");
 }/*# sourceMappingURL=main.css.map */
