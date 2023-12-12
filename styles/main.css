@@ -1,1 +1,26 @@
-/*# sourceMappingURL=main.css.map */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__heart {
+  height: 2rem;
+  width: 2rem;
+}
+
+.quote {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.quote__left-side {
+  width: 50%;
+}
+.quote__right-side {
+  width: 50%;
+}/*# sourceMappingURL=main.css.map */

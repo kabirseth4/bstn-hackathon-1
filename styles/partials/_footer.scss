@@ -1,0 +1,8 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    &__heart {
+        height: 2rem;
+        width: 2rem;
+    }
+}
