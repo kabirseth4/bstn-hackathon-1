@@ -1,7 +1,8 @@
 .footer {
     display: flex;
     justify-content: space-evenly;
-    &__heart {
+    &__heart,
+    &__broken-heart {
         height: 2rem;
         width: 2rem;
     }
