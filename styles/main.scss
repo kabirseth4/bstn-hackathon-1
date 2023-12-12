@@ -1,3 +1,4 @@
-@use "./partials/header" as *;
-@use "./partials/footer" as *;
-@use "./partials/quote" as *;
+@use "./partials/resets";
+@use "./partials/header";
+@use "./partials/footer";
+@use "./partials/quote";
