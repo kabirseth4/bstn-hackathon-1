@@ -66,15 +66,19 @@ const endGame = () => {
 };
 
 const createQuote = (quote) => {
-  const quoteLetters = quote.split("");
-  const underLined = quoteLetters.map((char) => {
-    if (char.match(/[a-z]/i)) {
-      return `<span class="character">${char}</span>`;
-    } else {
-      return char;
-    }
+  const quoteWords = quote.split(" ");
+  const underlinedQuoteWords = quoteWords.map((word) => {
+    const chars = word.split("");
+    const underLinedChars = chars.map((char) => {
+      if (char.match(/[a-z]/i)) {
+        return `<span class="character">${char}</span>`;
+      } else {
+        return char;
+      }
+    });
+    return `<span class="word" >${underLinedChars.join("")}</span>`;
   });
-  return underLined.join("");
+  return underlinedQuoteWords.join(" ");
 };
 
 const renderQuote = async () => {

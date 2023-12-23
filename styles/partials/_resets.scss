@@ -1,10 +1,14 @@
+@use "./typography";
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: The Office;
 }
 
 body {
+  background-image: url("https://img.freepik.com/free-photo/crinkled-paper-texture_23-2147786533.jpg?w=2000");
   margin: 0;
   display: flex;
   flex-direction: column;

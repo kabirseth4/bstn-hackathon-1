@@ -4,16 +4,19 @@
   padding: 1rem;
 
   &__left-side {
-    width: 50%;
+    // display: flex;
+    // align-content: center;
+    width: 40%;
     padding-right: 2rem;
   }
 
   &__right-side {
-    width: 50%;
+    width: 60%;
   }
 
   &__image {
     width: 100%;
+    // object-fit: cover;
   }
 
   &__author {
@@ -23,12 +26,18 @@
   &__text {
     font-size: 3rem;
     margin: 0;
+    word-spacing: 1.5rem;
   }
+}
+
+.word {
+  white-space: nowrap;
 }
 
 .character {
   position: relative;
   color: transparent;
+  margin-right: 5px;
 
   &::after {
     content: " ";
@@ -48,11 +57,6 @@
   &--incorrect {
     color: red;
   }
-}
-
-main {
-  display: flex;
-  align-items: center;
 }
 
 main {
